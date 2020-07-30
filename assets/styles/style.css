@@ -1,0 +1,53 @@
+nav{
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+h1 {
+  
+}
+
+.nav_menu {
+  display: flex;
+}
+.intro_section{
+  background-color: #f4b93d;
+  height: 90vh;
+  width: 100vw;
+}
+
+.portfolio_section{
+  background-color: #005ba9;
+  height: 90vh;
+  width: 100vw;
+}
+
+.about_section{
+  background-color: #54e7c7;
+  height: 90vh;
+  width: 100vw;
+}
+
+.contact_section{
+  background-color: #009ee2;
+  height: 90vh;
+  width: 100vw;
+}
+
+.slider-content-container { 
+  margin: 0px; 
+}
+
+.carousel-cell {
+  margin: 0;
+}
+
+a:hover{
+  cursor: pointer;
+}
