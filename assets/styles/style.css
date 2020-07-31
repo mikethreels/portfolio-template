@@ -1,7 +1,27 @@
+@font-face {
+  font-family: "poppins-bold";
+  font-display: swap;
+  src: local("Poppins-Black"), url(../styles/fonts/Poppins-Black.ttf) format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "poppins-medium";
+  font-display: swap;
+  src: local("Poppins-medium"), url(../styles/fonts/Poppins-Medium.ttf) format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
 nav{
   height: 10vh;
-  display: flex;
   justify-content: space-between;
+  color: #727274;
+}
+
+main {
+  color: #727274;
 }
 
 a {
@@ -10,34 +30,92 @@ a {
 }
 
 h1 {
-  
+  font-family: "poppins-bold", 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 5vh;
+  color: white;
 }
 
-.nav_menu {
-  display: flex;
+h2 {
+  font-size: max(5vw, 30px);
+  text-align: center;
+  color: white;
+  font-family: "poppins-medium", 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  padding-bottom: 40px;
 }
-.intro_section{
-  background-color: #f4b93d;
+
+.initials {
+  width: 10vh;
+  height: 10vh;
+  margin-left: 5px;
+  border-radius: 50%;
+  background-color: #727274;
+  /* background-image: linear-gradient(to right top, #845ec2, #806ecc, #7e7cd4, #7d8adb, #7f97e1, #66a7f0, #45b7fa, #00c6ff, #00dcff, #00eedf, #00fa95, #18ff00); */
+  align-items: center;
+  justify-content: center;
+}
+.menu_container {
+  margin-right: 15px;
+}
+nav ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  height: 10vh;
+}
+
+.nav-leaf{
+  align-items: center;
+  justify-content: center;
+} 
+
+.nav-leaf p {
+  font-size: max(2vw, 15px);
+  font-family: "poppins-medium", 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.main_sections {
   height: 90vh;
   width: 100vw;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main_sections > p {
+  font-size: max(2.5vw, 15px);
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  padding-bottom: 40px;
+  text-align: center;
+}
+
+.social_links {
+  font-size: max(3vw, 15px);
+}
+
+.social_links li {
+  margin: 5px;
+  text-align: center;
+}
+
+.social_links ul {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  height: 10vh;
+}
+
+.intro_section{
+  background-color: #eabad8;
 }
 
 .portfolio_section{
-  background-color: #005ba9;
-  height: 90vh;
-  width: 100vw;
+  background-color: #009ee2;
 }
 
 .about_section{
   background-color: #54e7c7;
-  height: 90vh;
-  width: 100vw;
 }
 
 .contact_section{
-  background-color: #009ee2;
-  height: 90vh;
-  width: 100vw;
+  background-color: #005ba9;
 }
 
 .slider-content-container { 
@@ -50,4 +128,9 @@ h1 {
 
 a:hover{
   cursor: pointer;
+}
+
+/* helper */
+.flex {
+display: flex;
 }

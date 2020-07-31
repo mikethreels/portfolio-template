@@ -12,23 +12,31 @@
   </head>
   <body>
     <header>
-      <nav>
-        <div>
-          <a href=""><h1>Michael Threels</h1></a>
+      <nav class="flex">
+        <div class="initials flex">
+          <a href=""><h1>MT</h1></a>
         </div>
-        <div>
-          <ul class="nav_menu">
-            <li>
-              <p>Intro</p>
+        <div class="menu_container">
+          <ul>
+            <li class="flex nav-leaf">
+              <a class="flex" href="">
+                <p class="">Intro</p>
+              </a>
             </li>
-            <li>
-              <p>Portfolio</p>
+            <li class="flex nav-leaf">
+              <a href="">
+                <p class="">Portfolio</p>
+              </a>
             </li>
-            <li>
-              <p>About</p>
+            <li class="flex nav-leaf">
+              <a href="">
+                <p class="">About</p>
+              </a>
             </li>
-            <li>
-              <p>Contact</p>
+            <li class="flex nav-leaf">
+              <a href="">
+                <p class="">Contact</p>
+              </a>
             </li>
           </ul>
         </div>
@@ -36,17 +44,37 @@
     </header>
     <main>
       <div class="slider main-carousel" data-flickity='{ "cellAlign": "left", "contain": true, "pageDots": false}'>
-        <section class="slider-content-container carousel-cell intro_section">
-          
+        <section class="slider-content-container carousel-cell intro_section main_sections flex">
+          <h2>Hi! My name is Michael <br> </h2>
+          <p>I'm a remote fullstack developer based in Poland. <br> I can make your website or web app look stunning and a joy to navigate. <br> contact me if you're interested</p>
+          <div class="social_links">
+            <ul>
+              <li>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-angellist"></i></a>
+              </li> 
+              <li>
+                <a href="#"><i class="fab fa-github"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-medium-m"></i></a>
+              </li>
+            </ul>
+          </div>
         </section>
-        <section class="slider-content-container carousel-cell portfolio_section">
-          
+        <section class="slider-content-container carousel-cell portfolio_section main_sections flex">
+          <h2>Portfolio</h2>
         </section>
-        <section class="slider-content-container carousel-cell about_section">
-          
+        <section class="slider-content-container carousel-cell about_section main_sections flex">
+          <h2>About</h2>
         </section>
-        <section class="slider-content-container carousel-cell contact_section">
-          
+        <section class="slider-content-container carousel-cell contact_section main_sections flex">
+          <h2>Contact</h2>
         </section>
       </div>
     </main> 
