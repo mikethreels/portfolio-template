@@ -106,8 +106,45 @@ nav ul {
   background-color: #eabad8;
 }
 
+.my_projects {
+  width: 90vw;
+  max-height: 100%;
+  display: grid;
+}
+
+.my_projects_list {
+  max-height: 90vh;
+  
+  grid-template-columns: minmax(0, 1fr);
+  grid-template-rows: minmax(0, 1fr);
+}
+
+
+.my_projects img {
+  width: 100%;
+  height: auto;
+}
+
+.first_project {
+  grid-column: 1/ 4;
+  grid-row: 1/2;
+}
+
+.second_project {
+  grid-column: 4/ -1;
+  grid-row: 1/2;
+}
+
+.extra_project {
+  display: none;
+}
+
 .portfolio_section{
   background-color: #009ee2;
+}
+
+.portfolio_section h2 {
+  padding-bottom: 10px;
 }
 
 .about_section{
@@ -128,6 +165,19 @@ nav ul {
 
 a:hover{
   cursor: pointer;
+}
+
+@media (min-width: 769px) {
+  .extra_project {
+    display: block;
+    grid-column: span 2;
+  }
+  
+  .my_projects {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
+    grid-template-rows: minmax(0, 1fr) minmax(0, 1fr);
+  }
 }
 
 /* helper */
