@@ -1,7 +1,27 @@
+@font-face {
+  font-family: "poppins-bold";
+  font-display: swap;
+  src: local("Poppins-Black"), url(../styles/fonts/Poppins-Black.ttf) format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "poppins-medium";
+  font-display: swap;
+  src: local("Poppins-medium"), url(../styles/fonts/Poppins-Medium.ttf) format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
 nav{
   height: 10vh;
-  display: flex;
   justify-content: space-between;
+  color: #727274;
+}
+
+main {
+  color: #727274;
 }
 
 a {
@@ -10,34 +30,192 @@ a {
 }
 
 h1 {
-  
+  font-family: "poppins-bold", 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 5vh;
+  color: white;
 }
 
-.nav_menu {
-  display: flex;
+h2 {
+  font-size: max(5vw, 30px);
+  text-align: center;
+  color: white;
+  font-family: "poppins-medium", 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  padding-bottom: 40px;
 }
-.intro_section{
-  background-color: #f4b93d;
+
+h3 {
+  font-weight: 700;
+}
+
+input,
+textarea {
+  border-radius: 5px;
+}
+
+.initials {
+  width: 10vh;
+  height: 10vh;
+  margin-left: 5px;
+  border-radius: 50%;
+  background-color: #727274;
+  /* background-image: linear-gradient(to right top, #845ec2, #806ecc, #7e7cd4, #7d8adb, #7f97e1, #66a7f0, #45b7fa, #00c6ff, #00dcff, #00eedf, #00fa95, #18ff00); */
+  align-items: center;
+  justify-content: center;
+}
+.menu_container {
+  margin-right: 15px;
+}
+nav ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  height: 10vh;
+}
+
+.nav-leaf{
+  align-items: center;
+  justify-content: center;
+} 
+
+.nav-leaf p {
+  font-size: max(2vw, 15px);
+  font-family: "poppins-medium", 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.main_sections {
   height: 90vh;
   width: 100vw;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "poppins-medium", 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.main_sections > p,
+.about_container {
+  font-size: max(2.5vw, 15px);
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  padding-bottom: 40px;
+  text-align: center;
+}
+
+.about_container{
+  margin: 50px;
+  text-align: start;
+}
+
+.about_me_info{
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 100px 0 50px;
+}
+
+.social_links {
+  font-size: max(3vw, 15px);
+}
+
+.social_links li {
+  margin: 5px;
+  text-align: center;
+}
+
+.social_links ul {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  height: 10vh;
+}
+
+.intro_section{
+  background-color: #eabad8;
+}
+
+.my_projects {
+  width: 90vw;
+  max-height: 70vh;
+  display: grid;
+  grid-template-rows: minmax(0, 1fr) minmax(0, 1fr);
+}
+
+.my_projects_list {
+  max-height: 90vh;
+  grid-template-columns: minmax(0, 1fr);
+  grid-template-rows: minmax(0, 1fr);
+}
+
+
+.my_projects img {
+  width: auto;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.first_project {
+  justify-content: center;
+  display: flex;
+  grid-column: 1/ 4;
+  grid-row: 1/2;
+}
+
+.second_project {
+  justify-content: center;
+  display: flex;
+  grid-column: 4/ -1;
+  grid-row: 2/3;
+}
+
+.extra_project {
+  display: none;
 }
 
 .portfolio_section{
-  background-color: #005ba9;
-  height: 90vh;
-  width: 100vw;
+  background-color: #009ee2;
+}
+
+.portfolio_section h2 {
+  padding-bottom: 10px;
+}
+
+.first_project img:hover,
+.second_project img:hover,
+.extra_project img:hover {
+  opacity: 0.5;
+
 }
 
 .about_section{
   background-color: #54e7c7;
-  height: 90vh;
-  width: 100vw;
+}
+
+.resume_form {
+  justify-content: center;
+}
+
+.resume {
+  background-color: #727274;
+  color: #fff;
+  height: 50px;
+  padding-bottom: 5px;
+}
+
+.resume:hover {
+  background-color: #fff;
+  color: #727274;
 }
 
 .contact_section{
-  background-color: #009ee2;
-  height: 90vh;
-  width: 100vw;
+  background-color: #005ba9;
+}
+
+form div {
+  margin: 10px 0;
+}
+
+form input {
+  height: 40px;
+}
+
+.email input,
+.info textarea {
+  width: 100%;
 }
 
 .slider-content-container { 
@@ -48,6 +226,30 @@ h1 {
   margin: 0;
 }
 
-a:hover{
+a:hover,
+.resume:hover {
   cursor: pointer;
+}
+
+@media (min-width: 769px) {
+  .extra_project {
+    display: block;
+    grid-column: span 2;
+    display: flex;
+    justify-content: center;
+  }
+
+  .second_project {
+    grid-row: 1/2;
+  }
+  
+  .my_projects {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
+  }
+}
+
+/* helper */
+.flex {
+display: flex;
 }
