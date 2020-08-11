@@ -87,6 +87,7 @@ nav ul {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  font-family: "poppins-medium", 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .main_sections > p,
@@ -103,7 +104,8 @@ nav ul {
 }
 
 .about_me_info{
-  align-items: center;
+  flex-direction: column;
+  justify-content: center;
   padding: 0 100px 0 50px;
 }
 
@@ -130,6 +132,7 @@ nav ul {
   width: 90vw;
   max-height: 70vh;
   display: grid;
+  grid-template-rows: minmax(0, 1fr) minmax(0, 1fr);
 }
 
 .my_projects_list {
@@ -156,7 +159,7 @@ nav ul {
   justify-content: center;
   display: flex;
   grid-column: 4/ -1;
-  grid-row: 1/2;
+  grid-row: 2/3;
 }
 
 .extra_project {
@@ -171,8 +174,31 @@ nav ul {
   padding-bottom: 10px;
 }
 
+.first_project img:hover,
+.second_project img:hover,
+.extra_project img:hover {
+  opacity: 0.5;
+
+}
+
 .about_section{
   background-color: #54e7c7;
+}
+
+.resume_form {
+  justify-content: center;
+}
+
+.resume {
+  background-color: #727274;
+  color: #fff;
+  height: 50px;
+  padding-bottom: 5px;
+}
+
+.resume:hover {
+  background-color: #fff;
+  color: #727274;
 }
 
 .contact_section{
@@ -200,7 +226,8 @@ form input {
   margin: 0;
 }
 
-a:hover{
+a:hover,
+.resume:hover {
   cursor: pointer;
 }
 
@@ -211,11 +238,14 @@ a:hover{
     display: flex;
     justify-content: center;
   }
+
+  .second_project {
+    grid-row: 1/2;
+  }
   
   .my_projects {
     display: grid;
     grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
-    grid-template-rows: minmax(0, 1fr) minmax(0, 1fr);
   }
 }
 
